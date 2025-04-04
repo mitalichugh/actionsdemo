@@ -26,4 +26,6 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest
+        set PYTHONPATH=%CD%
+         python -m pytest
+          
